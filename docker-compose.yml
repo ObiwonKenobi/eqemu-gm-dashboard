@@ -1,0 +1,40 @@
+version: '3.8'
+
+# EQEmu GM Dashboard
+# Copy .env.example to .env and fill in your values before running.
+# Run: docker compose up -d --build
+
+services:
+
+  # ── HTTP server + API proxy ────────────────────────────────────────────────
+  gm-dashboard:
+    image: eqemu-gm-dashboard:latest
+    build: .
+    container_name: eqemu-gm-dashboard
+    restart: unless-stopped
+    ports:
+      - "${DASHBOARD_PORT:-8765}:8765"
+    volumes:
+      - ${REPORTS_DIR:-./reports}:/reports
+    environment:
+      - TZ=${TZ:-UTC}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT:-3306}
+      - DB_USER=${DB_USER:-root}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=${DB_NAME:-peq}
+      - SPIRE_URL=${SPIRE_URL:-http://localhost:3000}
+      - DASHBOARD_PORT=${DASHBOARD_PORT:-8765}
+
+  # ── Report worker (runs gm_excel.py on demand from gm_export.sh) ──────────
+  gm-worker:
+    image: eqemu-gm-dashboard:latest
+    container_name: eqemu-gm-worker
+    restart: unless-stopped
+    volumes:
+      - /tmp:/data                               # TSV files written by gm_export.sh
+      - ${SCRIPTS_DIR:-./}:/scripts:ro           # gm_excel.py location
+      - ${REPORTS_DIR:-./reports}:/output        # Generated HTML + XLSX output
+    environment:
+      - TZ=${TZ:-UTC}
+    command: tail -f /dev/null                   # Stays alive; gm_export.sh calls docker exec
