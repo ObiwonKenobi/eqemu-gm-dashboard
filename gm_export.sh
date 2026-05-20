@@ -1,7 +1,7 @@
 #!/bin/bash
 # ==============================================================
 # EQEmu GM Command Report — Export Script
-# Project: https://github.com/YOUR_USERNAME/eqemu-gm-dashboard
+# Project: https://github.com/ObiwonKenobi/eqemu-gm-dashboard
 # Version: 1.2  |  Created: May 2026
 #
 # Runs as a persistent daemon, regenerating the GM report every

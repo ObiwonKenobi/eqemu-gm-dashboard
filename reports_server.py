@@ -1,6 +1,6 @@
 # ==============================================================
 # EQEmu GM Report — HTTP Server
-# Project: https://github.com/YOUR_USERNAME/eqemu-gm-dashboard
+# Project: https://github.com/ObiwonKenobi/eqemu-gm-dashboard
 # Version: 1.3  |  Created: May 2026
 #
 # Lightweight threaded HTTP server that serves the GM Command

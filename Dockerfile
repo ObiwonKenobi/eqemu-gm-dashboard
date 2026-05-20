@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 LABEL org.opencontainers.image.title="EQEmu GM Dashboard"
 LABEL org.opencontainers.image.description="GM activity dashboard and reporting server for EQEmu servers"
-LABEL org.opencontainers.image.source="https://github.com/YOUR_USERNAME/eqemu-gm-dashboard"
+LABEL org.opencontainers.image.source="https://github.com/ObiwonKenobi/eqemu-gm-dashboard"
 
 WORKDIR /app
 

@@ -1,6 +1,6 @@
 # ==============================================================
 # EQEmu GM Command Report — Report Generator
-# Project: https://github.com/YOUR_USERNAME/eqemu-gm-dashboard
+# Project: https://github.com/ObiwonKenobi/eqemu-gm-dashboard
 # Version: 1.1  |  Created: May 2026
 #
 # Processes GM command TSV exports from an EQEmu/akk-stack

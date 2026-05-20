@@ -35,7 +35,7 @@ character status, and Spire audit logs through a dark-themed web interface.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/eqemu-gm-dashboard.git
+git clone https://github.com/ObiwonKenobi/eqemu-gm-dashboard.git
 cd eqemu-gm-dashboard
 ```
 
