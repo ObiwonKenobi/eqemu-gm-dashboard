@@ -5,16 +5,16 @@ Tracks GM commands, item grants, kills, player deaths, bot activity, level progr
 character status, and Spire audit logs through a dark-themed web interface.
 
 ### Overview & Navigation
-![Overview](docs/screenshot-overview.png)
+![Overview](screenshot-overview.png)
 
 ### Summary Highlights
-![Highlights](docs/screenshot-highlights.png)
+![Highlights](screenshot-highlights.png)
 
 ### Trends — Activity Charts
-![Trends](docs/screenshot-trends.png)
+![Trends](screenshot-trends.png)
 
 ### Kills & Items Log
-![Kills and Items](docs/screenshot-kills-items.png)
+![Kills and Items](screenshot-kills-items.png)
 
 ---
 
