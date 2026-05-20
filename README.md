@@ -4,7 +4,17 @@ A real-time GM activity dashboard for [EQEmu](https://www.eqemu.net/) servers.
 Tracks GM commands, item grants, kills, player deaths, bot activity, level progression,
 character status, and Spire audit logs through a dark-themed web interface.
 
-![Dashboard preview](docs/preview.png)
+### Overview & Navigation
+![Overview](docs/screenshot-overview.png)
+
+### Summary Highlights
+![Highlights](docs/screenshot-highlights.png)
+
+### Trends — Activity Charts
+![Trends](docs/screenshot-trends.png)
+
+### Kills & Items Log
+![Kills and Items](docs/screenshot-kills-items.png)
 
 ---
 
