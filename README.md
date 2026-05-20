@@ -208,5 +208,5 @@ MIT — free to use, modify, and distribute. Attribution appreciated.
 
 ## Credits
 
-Original development by Dr. Christopher Opp, CISSP.
-Built for the EQEmu community.
+Original development by Chris Opp, DIT, CISSP.
+Built for the community.
